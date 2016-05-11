@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Leaflet and Nominatim</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<script src="js/jquery-2.2.3.min.js"></script>
+	</head>
+	<body>
+		<div id="map"></div>
+		<div id="search">
+			<input type="text" name="addr" value="" id="addr" size="10" onkeypress="addr_search();" />
+			<button type="button" onclick="addr_search();">Search</button>
+			<div id="results"/>
+		</div>
+		<script src="js/map.js"></script>
+	</body>
+</html>
